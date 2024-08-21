@@ -1,0 +1,171 @@
+h3 {
+    color: var(--color-black);
+    font-size: larger;
+}
+:visited{
+    color: unset;
+}
+
+.div-principal{
+    align-items: center;
+    text-align: center;
+}
+
+.div-suma {
+    background-color: var(--color-white2);
+    border: medium solid var(--color-primary);
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espacio entre los elementos */
+    margin: 20px;
+    border-radius: 35px;
+    box-shadow:var(--sombra-boxPrincipal)
+}
+
+#numeroA, #numeroB {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Hace que el contenedor sea circular */
+    border: 0.6rem solid var(--color-error); /* Borde amarillo */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Sombra */
+    font-size: 2rem;
+    font-weight: bolder;
+    background-color: var(--color-white); /* Fondo blanco */
+    color: var(--color-error); /* Color del texto */
+}
+
+#numeroA, #numeroB{
+    border-color: var(--color-accent);
+    animation: borderColorSuma 0.8s linear infinite;
+}
+
+#Sumador {
+    font-size: 3rem;
+    font-weight: bolder;
+    margin: 0 10px; /* Espacio entre el sumador y los números */
+    color: white;
+}
+
+.input-numerico{
+    padding: 10px;
+    border-radius: 30px;
+    border: medium solid var(--color-primary); /* Borde amarillo */
+    box-shadow: var(--sombra-boxPrincipal); /* Sombra */
+    background-color: var(--color-white);
+    width: 50vw;
+    height: 10vw;
+    max-width: 500px;
+    max-height: 100px;
+    font-size: xx-large;
+    color: var(--color-black);
+
+    /*CENTRAR*/
+    /*
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);*/
+
+    transition: border 0.5s ease; /* Transición para el borde */
+}
+
+.input-numerico:hover{
+    border-color: var(--color-accent);
+    animation: borderColorShift 1s linear infinite;
+    border-radius: 30px;
+}
+
+.div-respuesta{
+    margin: 45px;
+    background-color: var(--color-accent);
+    padding: 2vh;
+    border-radius: 20px;
+    max-width: 500px;
+    max-height: 100px;
+    box-shadow: var(--sombra-boxPrincipal);
+}
+.txt-correcto{
+    color: var(--color-white);
+    font-size: xx-large;
+    animation: txtColorUp 0.5s linear 5;
+}
+
+.form-suma{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.submit-verificar{
+    padding: 20px;
+    margin: 30px;
+    max-width: 450px;
+    max-height: 100px;
+    background-color: var(--color-primary);
+    border: medium solid var(--color-white);
+    border-radius: 20px;
+    box-shadow: var(--sombra-boxPrincipal);
+    font-size: large;
+    font-weight: bold;
+    color: var(--color-black);
+    transition: background-color 0.1s;
+
+}
+
+.submit-verificar:hover{
+    background-color: var(--color-secondary);
+}
+
+.submit-verificar:active{
+    background-color: var(--color-primary);
+}
+
+.div-final{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@keyframes borderColorShift {
+    0% {
+       border-color: var(--color-secondary);
+    }
+    50% {
+        border-color: var(--color-primary);
+    }
+    100% {
+        border-color: var(--color-secondary);
+    }
+}
+
+@keyframes borderColorSuma {
+    0% {
+       border-color: var(--color-accent);
+    }
+    50% {
+        border-color: var(--color-accent2);
+    }
+    100% {
+        border-color: var(--color-accent);
+    }
+}
+
+@keyframes txtColorUp {
+    0% {
+        color: var(--color-white);
+    }
+
+    50% {
+        color: var(--color-error);
+    }
+    100%{
+        color: var(--color-white);
+    }
+}
