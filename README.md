@@ -2,6 +2,7 @@
 
 ## Descripción
 Aplicación desarrollada para ejercitar habilidades mentales en la suma de números. Parte de mi proceso de aprendizaje en HTML, CSS, y conexión a APIs.
+Esta aplicación todavía no está terminada
 
 ## Características
 - Selección de niveles de dificultad.
