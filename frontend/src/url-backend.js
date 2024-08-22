@@ -1,3 +1,3 @@
-const URL_BACKEND = "http://192.168.0.106:3002";
+const URL_BACKEND = "https://app-suma-mental.onrender.com";
 
 export default URL_BACKEND;
